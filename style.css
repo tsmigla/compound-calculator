@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans";
+}
+
+article {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 100px auto 30px;
+}
+
+header,
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: beige;
+  text-align: center;
+  padding: 10px;
+}
+
+header {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 5px;
+  border: 5px solid beige;
+  background-color: pink;
+  text-shadow: 2px 2px 2px rgb(184, 88, 120);
+  color: white;
+  animation: titlespin 1s linear;
+}
+
+@keyframes titlespin {
+  0% {
+    rotate: 0deg;
+    transform: translate();
+  }
+  100% {
+    rotate: 360deg;
+    transform: translate();
+  }
+}
+
+footer {
+  font-style: italic;
+}
+
+main {
+  padding: 40px 10px 10px 10px;
+  text-align: center;
+  background-image: radial-gradient(
+    rgb(167, 205, 210),
+    rgb(104, 167, 167),
+    rgb(73, 129, 129)
+  );
+}
+
+form {
+  display: grid;
+  grid-template: auto auto auto auto / 5em 150px;
+  gap: 4px;
+  width: 220px;
+  margin: 0 auto;
+}
